@@ -88,6 +88,7 @@ class BlogPost(db.Model):
 class Comment(db.Model):
     __tablename__ = 'comments'
     id = db.Column(db.Integer, primary_key=True)
+
     # *******Add child relationship*******#
     # "users.id" The users refers to the tablename of the Users class.
     # "comments" refers to the comments property in the User class.
